@@ -118,4 +118,58 @@ const questions = [
       { text: '12', correct: false, ans: 'D'},
     ]
   }
+  {
+    question: 'Who is the best YouTuber?',
+    answers: [
+      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
+      { text: 'Traversy Media', correct: false, ans: 'B'},
+      { text: 'Dev Ed', correct: true, ans: 'C'},
+      { text: 'Fun Fun Function', correct: false, ans: 'D'}
+    ]
+  },
+  {
+    question: 'Who is the best YouTuber?',
+    answers: [
+      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
+      { text: 'Traversy Media', correct: false, ans: 'B'},
+      { text: 'Dev Ed', correct: true, ans: 'C'},
+      { text: 'Fun Fun Function', correct: false, ans: 'D'}
+    ]
+  },
+  {
+    question: 'Who is the best YouTuber?',
+    answers: [
+      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
+      { text: 'Traversy Media', correct: false, ans: 'B'},
+      { text: 'Dev Ed', correct: true, ans: 'C'},
+      { text: 'Fun Fun Function', correct: false, ans: 'D'}
+    ]
+  },
+  {
+    question: 'Who is the best YouTuber?',
+    answers: [
+      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
+      { text: 'Traversy Media', correct: false, ans: 'B'},
+      { text: 'Dev Ed', correct: true, ans: 'C'},
+      { text: 'Fun Fun Function', correct: false, ans: 'D'}
+    ]
+  },
+  {
+    question: 'Who is the best YouTuber?',
+    answers: [
+      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
+      { text: 'Traversy Media', correct: false, ans: 'B'},
+      { text: 'Dev Ed', correct: true, ans: 'C'},
+      { text: 'Fun Fun Function', correct: false, ans: 'D'}
+    ]
+  },
+  {
+    question: 'Who is the best YouTuber?',
+    answers: [
+      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
+      { text: 'Traversy Media', correct: false, ans: 'B'},
+      { text: 'Dev Ed', correct: true, ans: 'C'},
+      { text: 'Fun Fun Function', correct: false, ans: 'D'}
+    ]
+  },
 ]
