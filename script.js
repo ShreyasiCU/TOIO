@@ -6,6 +6,9 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
+var correctAnswer;
+var hasGameStarted = false;
+
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
@@ -17,6 +20,7 @@ function startGame() {
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
+  hasGameStarted = true;
   setNextQuestion()
 }
 
@@ -33,6 +37,7 @@ function showQuestion(question) {
     button.classList.add('btn')
     if (answer.correct) {
       button.dataset.correct = answer.correct
+      correctAnswer = answer.ans 
     }
     button.addEventListener('click', selectAnswer)
     answerButtonsElement.appendChild(button)
@@ -80,35 +85,37 @@ const questions = [
   {
     question: 'What is 1 + 1?',
     answers: [
-      { text: 'Answer A: 2', correct: true },
-      { text: 'Answer B: 4 ', correct: false },
-      { text: 'Answer c: 3 ', correct: false },
-      { text: 'Answer d: 1 ', correct: false }
+      { text: '2', correct: true, ans: 'A'},
+      { text: '4 ', correct: false, ans: 'B'},
+      { text: '3 ', correct: false, ans: 'C'},
+      { text: '1 ', correct: false, ans: 'D'}
     ]
   },
   {
     question: 'Who is the best YouTuber?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
+      { text: 'Traversy Media', correct: false, ans: 'B'},
+      { text: 'Dev Ed', correct: true, ans: 'C'},
+      { text: 'Fun Fun Function', correct: false, ans: 'D'}
     ]
   },
   {
     question: 'Is web development fun?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Kinda', correct: false, ans: 'A'},
+      { text: 'YES!!!', correct: true, ans: 'B'},
+      { text: 'Um no', correct: false, ans: 'C'},
+      { text: 'IDK', correct: false, ans: 'D'}
     ]
   },
   {
     question: 'What is 4 * 2?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: '6', correct: false, ans: 'A'},
+      { text: '8', correct: true, ans: 'B'},
+      { text: '10', correct: false, ans: 'C'},
+      { text: '12', correct: false, ans: 'D'},
     ]
   }
 ]

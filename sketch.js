@@ -8,38 +8,36 @@ function setup() {
 }
 
 let old_letter;
-let incorrect_answer = ["B","C", "D"];
-let answer = "A";
+// let incorrect_answer = ["B","C", "D"];
+correctAnswer = "A";
 function draw() {
   asyncCubeControl();
   ellipse( mouseX, mouseY, 20, 20 );
 //   for( const cube of gCubes ){
     cube = gCubes[0];
     moving_cube = gCubes[1];
-    if( cube ){
-        //this checks the position on the letters
-    //   console.log(cube.standardId, cube.angle);
-      letter = cube.standardId;
-      if(letter){
-      letter = letter.charAt(letter.length-1);
-      if(letter == answer && letter != old_letter && moving_cube){
-
-        moving_cube.move(50, 50, move_distance);
-        old_letter = letter;
-      }else if(letter != old_letter && moving_cube){
-        for(x of incorrect_answer){
-            if(letter == x){
-                moving_cube.move(-50, -50, move_distance);
-                old_letter = letter;
-            }
+    if(hasGameStarted) {
+      if( cube ){
+          //this checks the position on the letters
+      //   console.log(cube.standardId, cube.angle);
+        letter = cube.standardId;
+        if(letter){
+        letter = letter.charAt(letter.length-1);
+        if(letter == correctAnswer && letter != old_letter && moving_cube){
+          moving_cube.move(50, 50, move_distance);
+          old_letter = letter;
+          currentQuestionIndex++;
+          setNextQuestion();
+        }else if((letter == "A" || letter == "B" || letter == "C" || letter == "D") && letter != old_letter && moving_cube){
+          moving_cube.move(-50, -50, move_distance);
+          old_letter = letter;
         }
-       
+      }else{
+          old_letter = letter;
+        }
+        console.log(letter);
+        
       }
-    }else{
-        old_letter = letter;
-      }
-      console.log(letter);
-      
     }
 // }
 }
@@ -71,8 +69,12 @@ function keyPressed() {
 
     
 //   for( const cube of gCubes ){
-    cube = gCubes[1];
-  if( cube ){cube.move(50, 50, move_distance);}
+  cube = gCubes[1];
+
+  if( cube ){
+    cube.move(50, 50, move_distance);
+    
+  }
     // }
 
 }
