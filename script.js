@@ -117,9 +117,9 @@ const questions = [
       { text: '10', correct: false, ans: 'C'},
       { text: '12', correct: false, ans: 'D'},
     ]
-  }
+  },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is the best YouTuber 1?',
     answers: [
       { text: 'Web Dev Simplified', correct: false, ans: 'A'},
       { text: 'Traversy Media', correct: false, ans: 'B'},
@@ -128,7 +128,7 @@ const questions = [
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is the best YouTuber 2?',
     answers: [
       { text: 'Web Dev Simplified', correct: false, ans: 'A'},
       { text: 'Traversy Media', correct: false, ans: 'B'},
@@ -137,7 +137,7 @@ const questions = [
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is the best YouTuber 3?',
     answers: [
       { text: 'Web Dev Simplified', correct: false, ans: 'A'},
       { text: 'Traversy Media', correct: false, ans: 'B'},
@@ -146,7 +146,7 @@ const questions = [
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is the best YouTuber 4?',
     answers: [
       { text: 'Web Dev Simplified', correct: false, ans: 'A'},
       { text: 'Traversy Media', correct: false, ans: 'B'},
@@ -155,7 +155,7 @@ const questions = [
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is the best YouTuber 5?',
     answers: [
       { text: 'Web Dev Simplified', correct: false, ans: 'A'},
       { text: 'Traversy Media', correct: false, ans: 'B'},
@@ -164,12 +164,16 @@ const questions = [
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is the best YouTuber 6?',
     answers: [
       { text: 'Web Dev Simplified', correct: false, ans: 'A'},
       { text: 'Traversy Media', correct: false, ans: 'B'},
       { text: 'Dev Ed', correct: true, ans: 'C'},
       { text: 'Fun Fun Function', correct: false, ans: 'D'}
     ]
+  },
+  {
+    question: 'Thanks !',
+    
   },
 ]
