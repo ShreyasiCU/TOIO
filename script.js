@@ -96,91 +96,91 @@ const questions = [
     {
       question: 'What is 1001 + 1111?',
       answers: [
-        { text: '1112', correct: true, ans: 'A'},
-        { text: '1113 ', correct: false, ans: 'B'},
-        { text: '1121 ', correct: false, ans: 'C'},
-        { text: '1113 ', correct: false, ans: 'D'}
+        { text: '2112', correct: true, ans: 'E'},
+        { text: '1113 ', correct: false, ans: 'F'},
+        { text: '1121 ', correct: false, ans: 'G'},
+        { text: '1113 ', correct: false, ans: 'H'}
       ]
     },
     {
       question: 'Which fish can blink with both eyes?',
       answers: [
-        { text: 'Cat fish', correct: false, ans: 'A'},
-        { text: 'Tiger whale', correct: false, ans: 'B'},
-        { text: 'Shark', correct: true, ans: 'C'},
-        { text: 'Seahorses', correct: false, ans: 'D'}
+        { text: 'Cat fish', correct: false, ans: 'E'},
+        { text: 'Tiger whale', correct: false, ans: 'F'},
+        { text: 'Shark', correct: true, ans: 'G'},
+        { text: 'Seahorses', correct: false, ans: 'H'}
       ]
     },
     {
       question: 'Which animal urine glows under a black light?',
       answers: [
-        { text: 'Elephant', correct: false, ans: 'A'},
-        { text: 'Cat', correct: true, ans: 'B'},
-        { text: 'Hyena', correct: false, ans: 'C'},
-        { text: 'Kangaroo', correct: false, ans: 'D'}
+        { text: 'Elephant', correct: false, ans: 'E'},
+        { text: 'Cat', correct: true, ans: 'F'},
+        { text: 'Hyena', correct: false, ans: 'G'},
+        { text: 'Kangaroo', correct: false, ans: 'H'}
       ]
     },
     {
       question: 'Which country drinks the most coffee per capita?',
       answers: [
-        { text: 'USA', correct: false, ans: 'A'},
-        { text: 'Finland', correct: true, ans: 'B'},
-        { text: 'Cuba', correct: false, ans: 'C'},
-        { text: 'South Africa', correct: false, ans: 'D'},
+        { text: 'USA', correct: false, ans: 'E'},
+        { text: 'Finland', correct: true, ans: 'F'},
+        { text: 'Cuba', correct: false, ans: 'G'},
+        { text: 'South Africa', correct: false, ans: 'H'},
       ]
     },
     {
       question: 'How many total states are in the USA?',
       answers: [
-        { text: '50', correct: false, ans: 'A'},
-        { text: '51', correct: false, ans: 'B'},
-        { text: '52', correct: true, ans: 'C'},
-        { text: '55', correct: false, ans: 'D'}
+        { text: '50', correct: true, ans: 'E'},
+        { text: '51', correct: false, ans: 'F'},
+        { text: '52', correct: false, ans: 'G'},
+        { text: '55', correct: false, ans: 'H'}
       ]
     },
     {
       question: 'How many days can humans live without water?',
       answers: [
-        { text: '3 days', correct: false, ans: 'A'},
-        { text: '30 days', correct: false, ans: 'B'},
-        { text: '10 days', correct: true, ans: 'C'},
-        { text: '2 weeks', correct: false, ans: 'D'}
+        { text: '3 days', correct: false, ans: 'E'},
+        { text: '30 days', correct: false, ans: 'F'},
+        { text: '10 days', correct: true, ans: 'G'},
+        { text: '2 weeks', correct: false, ans: 'H'}
       ]
     },
     {
       question: 'Which river flows through the Grand Canyon?',
       answers: [
-        { text: 'Salt river', correct: false, ans: 'A'},
-        { text: 'Green river', correct: false, ans: 'B'},
-        { text: 'Colorado river', correct: true, ans: 'C'},
-        { text: 'Arkansas river', correct: false, ans: 'D'}
+        { text: 'Salt river', correct: false, ans: 'E'},
+        { text: 'Colorado river', correct: true, ans: 'F'},
+        { text: 'Green river', correct: false, ans: 'G'},
+        { text: 'Arkansas river', correct: false, ans: 'H'}
       ]
     },
     {
       question: 'What is the name of the biggest technology company in South Korea?',
       answers: [
-        { text: 'Toshiba', correct: false, ans: 'A'},
-        { text: 'Hyundai Motors', correct: false, ans: 'B'},
-        { text: 'Samsung', correct: true, ans: 'C'},
-        { text: 'Kia Motors', correct: false, ans: 'D'}
+        { text: 'Toshiba', correct: false, ans: 'E'},
+        { text: 'Hyundai Motors', correct: false, ans: 'F'},
+        { text: 'Kia Motors', correct: false, ans: 'G'},
+        { text: 'Samsung', correct: true, ans: 'H'}
       ]
     },
     {
       question: 'Which country consumes the most chocolate per capita?',
       answers: [
-        { text: 'USA', correct: false, ans: 'A'},
-        { text: 'Finland', correct: false, ans: 'B'},
-        { text: 'Switzerland', correct: true, ans: 'C'},
-        { text: 'Netherlands', correct: false, ans: 'D'}
+        { text: 'USA', correct: false, ans: 'E'},
+        { text: 'Finland', correct: false, ans: 'F'},
+        { text: 'Switzerland', correct: true, ans: 'G'},
+        { text: 'Netherlands', correct: false, ans: 'H'}
       ]
     },
     {
       question: 'What is the most consumed manufactured drink in the world?',
       answers: [
-        { text: 'Coors Beer', correct: false, ans: 'A'},
-        { text: 'Coffee', correct: false, ans: 'B'},
-        { text: 'Tea', correct: true, ans: 'C'},
-        { text: 'Cappuccino', correct: false, ans: 'D'}
+        { text: 'Coors Beer', correct: false, ans: 'E'},
+        { text: 'Coffee', correct: false, ans: 'F'},
+        { text: 'Cappuccino', correct: false, ans: 'G'},
+        { text: 'Tea', correct: true, ans: 'H'}
       ]
     },
     // {
