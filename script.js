@@ -1,4 +1,5 @@
 const startButton = document.getElementById('start-btn')
+const restartButton = document.getElementById('restart-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
@@ -10,6 +11,7 @@ var correctAnswer;
 var hasGameStarted = false;
 
 startButton.addEventListener('click', startGame)
+restartButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
@@ -17,16 +19,24 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
   startButton.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  shuffledQuestions = questions.sort(() => .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
+  restartButton.classList.add('hide')
+  // questionContainerElement.classList.add('hide')
   hasGameStarted = true;
   setNextQuestion()
 }
 
 function setNextQuestion() {
   resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+
+  if (currentQuestionIndex < 10)
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+  else {
+    questionContainerElement.classList.add('hide');
+    restartButton.classList.remove('hide')
+  }
 }
 
 function showQuestion(question) {
@@ -173,8 +183,8 @@ const questions = [
         { text: 'Cappuccino', correct: false, ans: 'D'}
       ]
     },
-    {
-      question: 'Thanks !',
+    // {
+    //   question: 'Thanks !',
       
-    },
+    // },
   ]
