@@ -6,6 +6,11 @@ const canvas_width  = 10;
 function setup() {
   initCanvas();
 }
+function preload() {
+  soundFormats('mp3', 'ogg');
+  sound = loadSound('correct.mp3');
+  sound2 = loadSound('Buzzer.mp3');
+}
 
 let old_letter;
 // let incorrect_answer = ["B","C", "D"];
@@ -25,11 +30,13 @@ function draw() {
         letter = letter.charAt(letter.length-1);
         if(letter == correctAnswer && letter != old_letter && moving_cube){
           moving_cube.move(50, 50, move_distance);
+          sound.play();
           old_letter = letter;
           currentQuestionIndex++;
           setNextQuestion();
         }else if((letter == "A" || letter == "B" || letter == "C" || letter == "D") && letter != old_letter && moving_cube){
           moving_cube.move(-50, -50, move_distance);
+          sound2.play();
           old_letter = letter;
         }
       }else{
