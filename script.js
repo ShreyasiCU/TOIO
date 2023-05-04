@@ -81,99 +81,100 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
+
 const questions = [
-  {
-    question: 'What is 1 + 1?',
-    answers: [
-      { text: '2', correct: true, ans: 'A'},
-      { text: '4 ', correct: false, ans: 'B'},
-      { text: '3 ', correct: false, ans: 'C'},
-      { text: '1 ', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'Who is the best YouTuber?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
-      { text: 'Traversy Media', correct: false, ans: 'B'},
-      { text: 'Dev Ed', correct: true, ans: 'C'},
-      { text: 'Fun Fun Function', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'Is web development fun?',
-    answers: [
-      { text: 'Kinda', correct: false, ans: 'A'},
-      { text: 'YES!!!', correct: true, ans: 'B'},
-      { text: 'Um no', correct: false, ans: 'C'},
-      { text: 'IDK', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'What is 4 * 2?',
-    answers: [
-      { text: '6', correct: false, ans: 'A'},
-      { text: '8', correct: true, ans: 'B'},
-      { text: '10', correct: false, ans: 'C'},
-      { text: '12', correct: false, ans: 'D'},
-    ]
-  },
-  {
-    question: 'Who is the best YouTuber 1?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
-      { text: 'Traversy Media', correct: false, ans: 'B'},
-      { text: 'Dev Ed', correct: true, ans: 'C'},
-      { text: 'Fun Fun Function', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'Who is the best YouTuber 2?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
-      { text: 'Traversy Media', correct: false, ans: 'B'},
-      { text: 'Dev Ed', correct: true, ans: 'C'},
-      { text: 'Fun Fun Function', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'Who is the best YouTuber 3?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
-      { text: 'Traversy Media', correct: false, ans: 'B'},
-      { text: 'Dev Ed', correct: true, ans: 'C'},
-      { text: 'Fun Fun Function', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'Who is the best YouTuber 4?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
-      { text: 'Traversy Media', correct: false, ans: 'B'},
-      { text: 'Dev Ed', correct: true, ans: 'C'},
-      { text: 'Fun Fun Function', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'Who is the best YouTuber 5?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
-      { text: 'Traversy Media', correct: false, ans: 'B'},
-      { text: 'Dev Ed', correct: true, ans: 'C'},
-      { text: 'Fun Fun Function', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'Who is the best YouTuber 6?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: false, ans: 'A'},
-      { text: 'Traversy Media', correct: false, ans: 'B'},
-      { text: 'Dev Ed', correct: true, ans: 'C'},
-      { text: 'Fun Fun Function', correct: false, ans: 'D'}
-    ]
-  },
-  {
-    question: 'Thanks !',
-    
-  },
-]
+    {
+      question: 'What is 1001 + 1111?',
+      answers: [
+        { text: '1112', correct: true, ans: 'A'},
+        { text: '1113 ', correct: false, ans: 'B'},
+        { text: '1121 ', correct: false, ans: 'C'},
+        { text: '1113 ', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'Which fish can blink with both eyes?',
+      answers: [
+        { text: 'Cat fish', correct: false, ans: 'A'},
+        { text: 'Tiger whale', correct: false, ans: 'B'},
+        { text: 'Shark', correct: true, ans: 'C'},
+        { text: 'Seahorses', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'Which animal urine glows under a black light?',
+      answers: [
+        { text: 'Elephant', correct: false, ans: 'A'},
+        { text: 'Cat', correct: true, ans: 'B'},
+        { text: 'Hyena', correct: false, ans: 'C'},
+        { text: 'Kangaroo', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'Which country drinks the most coffee per capita?',
+      answers: [
+        { text: 'USA', correct: false, ans: 'A'},
+        { text: 'Finland', correct: true, ans: 'B'},
+        { text: 'Cuba', correct: false, ans: 'C'},
+        { text: 'South Africa', correct: false, ans: 'D'},
+      ]
+    },
+    {
+      question: 'How many total states are in the USA?',
+      answers: [
+        { text: '50', correct: false, ans: 'A'},
+        { text: '51', correct: false, ans: 'B'},
+        { text: '52', correct: true, ans: 'C'},
+        { text: '55', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'How many days can humans live without water?',
+      answers: [
+        { text: '3 days', correct: false, ans: 'A'},
+        { text: '30 days', correct: false, ans: 'B'},
+        { text: '10 days', correct: true, ans: 'C'},
+        { text: '2 weeks', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'Which river flows through the Grand Canyon?',
+      answers: [
+        { text: 'Salt river', correct: false, ans: 'A'},
+        { text: 'Green river', correct: false, ans: 'B'},
+        { text: 'Colorado river', correct: true, ans: 'C'},
+        { text: 'Arkansas river', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'What is the name of the biggest technology company in South Korea?',
+      answers: [
+        { text: 'Toshiba', correct: false, ans: 'A'},
+        { text: 'Hyundai Motors', correct: false, ans: 'B'},
+        { text: 'Samsung', correct: true, ans: 'C'},
+        { text: 'Kia Motors', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'Which country consumes the most chocolate per capita?',
+      answers: [
+        { text: 'USA', correct: false, ans: 'A'},
+        { text: 'Finland', correct: false, ans: 'B'},
+        { text: 'Switzerland', correct: true, ans: 'C'},
+        { text: 'Netherlands', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'What is the most consumed manufactured drink in the world?',
+      answers: [
+        { text: 'Coors Beer', correct: false, ans: 'A'},
+        { text: 'Coffee', correct: false, ans: 'B'},
+        { text: 'Tea', correct: true, ans: 'C'},
+        { text: 'Cappuccino', correct: false, ans: 'D'}
+      ]
+    },
+    {
+      question: 'Thanks !',
+      
+    },
+  ]
